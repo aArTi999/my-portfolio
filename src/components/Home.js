@@ -9,17 +9,20 @@ import Footer from "./Footer";
 
 const Home = () => {
   return (
-    <section className="w-full h-screen">
+    <section id="home" className="w-full h-screen">
       <Header />
       <div className=" bg-[#F6F6FF] bg-gradient-to-t from-blue-100 w-full h-screen flex flex-col relative justify-center items-center z-10">
-        <h1 className="text-6xl font-extrabold text-slate-800">
+        <h1 className="md:text-6xl lg:text-6xl text-4xl font-extrabold text-slate-800 text-center ">
           HI, THIS IS AARTI SHARMA
         </h1>
-        <p className="w-1/2 text-center mt-10 leading-8 text-lg">
-          A Frontend focused Web Developer building the Frontend of Websites and
-          Web Applications that leads to the success of the overall product
+        <p className="px-5 md:w-1/2 lg:w-1/2 text-center mt-10 leading-8 text-lg">
+          A goal oriented, determined and ambitious person with a passion for
+          Technology. I enjoy working collaboratively but can also work
+          independently.
         </p>
-        <Button title={"Projects"} />
+        <a href="#projects">
+          <Button title={"Projects"} />
+        </a>
       </div>
       <About />
       <Projects />

@@ -4,7 +4,10 @@ import Heading from "./Heading";
 
 const Contact = () => {
   return (
-    <section className="w-full min-h-screen bg-[#F6F6FF] bg-gradient-to-t from-blue-100 p-4">
+    <section
+      id="contact"
+      className="w-full min-h-screen bg-[#F6F6FF] bg-gradient-to-t from-blue-100 p-4"
+    >
       <div className="flex flex-col justify-center items-center">
         <Heading title={"Contact"} />
 
@@ -15,7 +18,7 @@ const Contact = () => {
 
         <form
           action=""
-          className="flex flex-col w-3/5  bg-white shadow-lg p-8 my-12 rounded-md "
+          className="flex flex-col w-full md:w-4/5 bg-white shadow-lg p-4 md:p-8 my-12 rounded-md "
         >
           <div className="flex flex-col my-3">
             <label htmlFor="name" className="font-bold text-slate-600">
@@ -50,7 +53,7 @@ const Contact = () => {
               rows="10"
             ></textarea>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-center md:justify-end">
             <Button title={"Submit"} />
           </div>
         </form>
