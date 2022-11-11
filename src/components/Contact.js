@@ -17,7 +17,8 @@ const Contact = () => {
         </p>
 
         <form
-          action=""
+          action="https://formspree.io/f/xyyvlave"
+          type="post"
           className="flex flex-col w-full md:w-4/5 bg-white shadow-lg p-4 md:p-8 my-12 rounded-md "
         >
           <div className="flex flex-col my-3">
